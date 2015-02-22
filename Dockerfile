@@ -1,5 +1,5 @@
 FROM dockerfile/python
-RUN pip install http://github.com/spulec/moto/archive/master.zip
+RUN pip install moto
 
 # Create boto endpoints.json with "moto" region
 COPY endpoints.json /opt/moto/
